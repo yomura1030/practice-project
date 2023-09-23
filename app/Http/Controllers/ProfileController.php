@@ -57,4 +57,9 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
+
+    //form表示用コード
+    public function form(){
+        return view('form');
+    }
 }

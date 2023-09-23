@@ -28,4 +28,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+//フォーム表示用コート
+Route::get('/form', function(){
+    return view('form');
+})->name('form');
+
 require __DIR__.'/auth.php';
