@@ -33,4 +33,11 @@ Route::get('/form', function(){
     return view('form');
 })->name('form');
 
+Route::post()
+
+//ユーザー情報登録後画面コード
+Route::get('/complete', function(){
+    return view('complete');
+})
+->name('complete');
 require __DIR__.'/auth.php';

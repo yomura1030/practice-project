@@ -62,4 +62,9 @@ class ProfileController extends Controller
     public function form(){
         return view('form');
     }
+
+    //ユーザー情報登録後画面コード
+    public function complete(){
+        return view('complete');
+    }
 }
